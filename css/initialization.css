@@ -1,0 +1,13 @@
+*{ /* 初始化边框大小 */
+	margin: 0;
+	padding: 0;
+}
+body{ /*初始化背景色*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100vw;
+	background-color: #242428;
+}
