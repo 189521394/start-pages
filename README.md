@@ -1,4 +1,4 @@
 # 这是什么？
 一个简单的**起始页**，默认接入bing搜索。
 # 如何使用？
-将**https://189521394.github.io/start-pages/**设置为你的浏览器主页即可
+将 https://189521394.github.io/start-pages/ 设置为你的浏览器主页即可
