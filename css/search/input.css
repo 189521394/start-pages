@@ -1,0 +1,44 @@
+input#in{
+	position: absolute;
+}
+
+
+
+input#in{ /*初始化位置*/
+	margin: 13px 0 0 0;
+	left: 25px;
+	right: 50px;
+}
+input#in{ /*初始化形状*/
+	width: auto;
+	height: 25px;
+	background-color: #1F2128;
+	border-style: none;
+	caret-color: #fafaff;
+}
+input#in{ /*字体样式*/
+	font-size: 20px;
+	color: #fafaff;
+	line-height: 25px;
+}
+input#in{  /*动画*/
+	transition: all 0.5s;
+}
+
+
+
+input#in:hover{ /*浮过背景颜色*/
+	background-color: #b4b4bc;
+}
+input#in:hover{  /*浮过动画*/
+	transition: all 0.5s;
+}
+
+
+
+input#in:focus{ /*焦点边框*/
+	outline-style: none;
+}
+input#in:focus{  /*浮过动画*/
+	transition: all 0.5s;
+}

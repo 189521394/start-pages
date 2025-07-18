@@ -1,0 +1,37 @@
+div#box{
+	position: relative;
+}
+
+
+
+div#box{ /*初始化形状*/
+	width: 40vw;
+	height: 50px;
+	background-color: #1F2128;
+}
+div#box{ /*初始化边框*/
+	border-style: solid;
+	border-width: 1px;
+	border-color: #393A43;
+	border-radius: 25px;
+}
+div#box{ /*初始化阴影*/
+	box-shadow: 5px 5px 20px -10px #0B0B0F;
+}
+div#box{ /*动画*/
+	transition: all 0.5s,
+				border-radius 0.4s cubic-bezier(1.0, 0.0, 0.0, 1.0);
+}
+
+
+
+div#box:hover{ /*浮过初始化*/
+	background-color: #434656;
+	border-color: #393A43;
+	box-shadow: 5px 5px 15px -5px #0B0B0E;
+	border-style: solid;
+}
+div#box:hover{ /*动画*/
+	transition: all 0.5s,
+				border-radius 0.4s cubic-bezier(1.0, 0.0, 0.0, 1.0);
+}

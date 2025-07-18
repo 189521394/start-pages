@@ -1,0 +1,40 @@
+input#search{
+	position: absolute;
+}
+
+
+
+input#search{ /* 初始化位置 */
+	margin: auto;
+	right: 0px;
+}
+input#search{ /*初始化形状*/
+	background-image: url("../../pic/search.svg");
+	width: 50px;
+	height: 50px;
+	transform: scale(80%);
+	background-color: transparent;
+	border-style: none;
+	border-radius: 50%;
+}
+input#search{ /*动画*/
+	transition: all 0.5s;
+}
+
+
+
+input#search:hover{ /*浮过时状态*/
+	background-color: #373841;
+}
+input#search:hover{ /*浮过动画*/
+	transition: all 0.5s;
+}
+
+
+
+input#search:active{ /*点击*/
+	background-color: #787880;
+}
+input#search:active{ /*点击动画*/
+	transition: all 0.1s;
+}

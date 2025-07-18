@@ -1,0 +1,8 @@
+/*控制按钮位置，不让它乱跑*/
+.conbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}

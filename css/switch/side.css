@@ -1,0 +1,42 @@
+/*初始化*/
+div#side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/*边框和阴影*/
+div#side{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #393A43;
+
+    border-radius: 40px;
+    background-color: #1F2128;
+
+    box-shadow: 5px 5px 20px -10px #0B0B0F;
+}
+/*大小和样式*/
+div#side{
+    height: 60px;
+    width: 180px;
+}
+/* 设置背景图片 */
+div#side1{
+    background-image: url(../../pic/bing-color.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+div#side2{
+    background-image: url(../../pic/bilibili-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+div#side3{
+    background-image: url(../../pic/icons8-warframe.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}

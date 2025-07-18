@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<link rel="stylesheet" href="css/boxsearch.css">
-		<link rel="stylesheet" href="css/text.css">
-		<link rel="stylesheet" href="css/search.css">
-		<link rel="stylesheet" href="css/initialization.css"/>
-		<meta charset="utf-8">
-		<title>你好 世界！</title>
-		<link rel="Shortcut Icon" href="pic/search.png" type="image/x-icon" />
-	</head>
-	<body>
-		<form action="https://www.bing.com/search" method="get" target="_self">
-			<div id="searchbox">
-				<input type="text" id="in" name="q" autofocus>
-				<input type="submit" id="search" value=""/>
-			</div>
-		</form>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <title>你好 世界！</title>
+    <link rel="Shortcut Icon" href="pic/search.svg" type="image/x-icon" />
+    <!--初始化-->
+    <link rel="stylesheet" href="css/initialization.css"/>
+
+    <!--搜索框-->
+    <link rel="stylesheet" href="css/search/box.css">
+
+    <!--输入框-->
+    <link rel="stylesheet" href="css/search/input.css">
+
+    <!--输入框焦点问题-->
+    <link rel="stylesheet" href="css/search/focus.css">
+
+    <!--提交按钮-->
+    <link rel="stylesheet" href="css/search/submit.css">
+
+    <!--切换搜索目标-->
+    <link rel="stylesheet" href="css/switch/side.css">
+    <link rel="stylesheet" href="css/switch/sidex.css">
+
+    <!--控制按钮位置-->
+    <link rel="stylesheet" href="css/switch/controlBox.css">
+</head>
+<body>
+    <form id="searchForm" action="https://cn.bing.com/search" method="get" target="_self">
+        <div id="box">
+            <!-- 添加必要的隐藏字段 -->
+            <input type="hidden" name="title" value="特殊:搜索">
+            <input type="hidden" name="profile" value="default">
+            <input type="hidden" name="sort" value="just_match">
+
+            <input type="search" id="in" name="q" autofocus placeholder="使用Bing搜索引擎">
+            <input type="submit" id="search" value=""/>
+        </div>
+    </form>
+    <div id="side">
+        <div class="conbox">
+            <div id="side1" class="sides"></div>
+        </div>
+        <div class="conbox">
+            <div id="side2" class="sides"></div>
+        </div>
+        <div class="conbox">
+            <div id="side3" class="sides"></div>
+        </div>
+    </div>
+</body>
 </html>
-<style>
-	/* 确保 :focus 样式优先 */
-	div#searchbox > input#in:focus {
-		background-color: #1F2128;
-	}
-	/* 解决 :hover 和 :focus 冲突 */
-	div#searchbox:hover > input#in:not(:focus) {
-		background-color: #434656;
-	}
-</style>
-<script>
-	// 当 input 获得焦点时执行
-	document.getElementById('in').addEventListener('focus', function() {
-		const searchbox = document.getElementById('searchbox');
-		searchbox.style.borderRadius = '10px';
-		searchbox.style.borderStyle = 'solid';
-		searchbox.style.borderColor = '#00a1d6';
-		searchbox.style.backgroundColor = '#1F2128';
-		searchbox.style.boxShadow = '0px 0px 0px 3px #00a1d6,0px 0px 20px -3px #00a1d6,0px 0px 10px -3px #00a1d6 inset';
-	});
-	// 当 input 失去焦点时恢复原来的样式
-	document.getElementById('in').addEventListener('blur', function() {
-		const searchbox = document.getElementById('searchbox');
-		searchbox.style = '';
-		searchbox.classList.remove('focused');
-	});
-</script>
+<!--搜索框焦点时的样式-->
+<script src="js/focus.js"></script>
+
+<!--切换搜索-->
+<script src="js/switch.js"></script>
+
+<!--
+css一定要写在head里面，不然会出神奇小bug
+js一定要写在文章末尾，不然也会出神奇小bug
+-->

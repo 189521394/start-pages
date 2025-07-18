@@ -1,0 +1,28 @@
+/* 确保:focus样式优先 */
+div#box > input#in:focus {
+    background-color: #1F2128;
+}
+/* 解决:hover和:focus冲突 */
+div#box:hover > input#in:not(:focus) {
+    background-color: #434656;
+}
+/*
+哈
+哈哈
+哈哈哈
+哈哈哈哈
+这一坨
+陈年老代码
+一年前写的
+我还没修
+哈哈
+不会修
+看不懂
+算了
+影响不大
+算了吧
+能跑就行
+哈哈哈
+哈哈
+哈
+*/
