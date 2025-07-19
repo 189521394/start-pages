@@ -4,7 +4,7 @@
     height: 50px;
     margin: 5px;
 
-    background-color: #000000;
+    background-color: #292b32;
     border-radius: 50%;
     box-shadow: 0px 0px 15px -5px #0B0B0F;
 
@@ -12,19 +12,14 @@
 }
 /*浮过*/
 .sides:hover{
-    width: 55px;
-    height: 55px;
-    /*必须重置边距，不然超出控制框大小，会出bug*/
-    margin: 0px;
+    transform: scale(1.1);
 
-    box-shadow: 0px 0px 10px 0px #0B0B0F;
+    box-shadow: 0px 0px 10px 0px #101014;
     transition: all 0.3s cubic-bezier(.34,2,.6,1);
 }
 /*点击*/
 .sides:active{
-    width: 45px;
-    height: 45px;
-    background-color: #000000;
+    transform: scale(0.9);
 
     box-shadow: 0px 0px 15px -5px #0B0B0F;
     transition: all 0.3s cubic-bezier(.34,2,.6,1);
